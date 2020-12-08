@@ -1,0 +1,29 @@
+{
+    "name": "js-mocha-bootstrap",
+    "version": "1.0.0",
+    "description": "A node skeleton for testing with mocha, chai and sinon",
+    "main": "index.js",
+    "scripts": {
+        "coverage": "istanbul cover _mocha",
+        "tdd": "mocha -w",
+        "test": "mocha --color"
+    },
+    "keywords": [
+        "tdd",
+        "node",
+        "skeleton",
+        "test"
+    ],
+    "author": "Ibai Imaz @ibaiimaz",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-preset-es2015": "^6.24.1",
+        "babel-register": "^6.26.0",
+        "chai": "^4.2.0",
+        "istanbul": "^1.1.0-alpha.1",
+        "mocha": "^5.2.0",
+        "sinon": "^7.2.2",
+        "sinon-chai": "^3.3.0"
+    },
+    "dependencies": {}
+}
