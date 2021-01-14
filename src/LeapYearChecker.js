@@ -1,10 +1,14 @@
 class LeapYearChecker {
 
     isLeap(year) {
-        if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+        if (this._isDivisibleBy(4, year) && (!this._isDivisibleBy(100, year) || this._isDivisibleBy(400, year))) {
             return true;
         }
         return false;
+    }
+
+    _isDivisibleBy(divisor, year) {
+        return year % divisor === 0;
     }
 }
 
